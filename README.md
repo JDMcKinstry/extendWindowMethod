@@ -10,10 +10,14 @@ Automatically prevents adding the same method twice with one exception:
 </pre>
 
 ### Use as simple as:
-	extendWindowMethod('alert', function() { console.debug('Added First, Play last'); }, true);
-	extendWindowMethod('alert', function() { console.debug('Added Mid, Play Mid'); }, true);
-	extendWindowMethod('alert', function() { console.debug('Added Last, Play First'); }, true);
-	alert('test');	//	check your console!
+```javascript
+extendWindowMethod('alert', function() { console.debug('Added First, Play last'); }, true);
+extendWindowMethod('alert', function() { console.debug('Added Mid, Play Mid'); }, true);
+extendWindowMethod('alert', function() { console.debug('Added Last, Play First'); }, true);
+alert('test');	//	check your console!
+```
 
 #### Remove an added method:
-	extendWindowMethod('alert', function() { console.debug('Added First, Play last'); }, 'remove');
+```javascript
+extendWindowMethod('alert', function() { console.debug('Added First, Play last'); }, 'remove');
+```
